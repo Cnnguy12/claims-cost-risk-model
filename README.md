@@ -1,5 +1,7 @@
 # Insurance Claims Cost/Risk Predictive Model
 
+**Author:** Chau N. N. Nguyen, MS, MA
+
 XGBoost + SHAP model that flags Medicare beneficiaries likely to become top-decile inpatient cost claimants, packaged behind a Streamlit front-end for a non-technical business user. Payers need to identify high-cost members *before* the cost is incurred so care-management resources can be targeted proactively — this scores members on prior-year utilization and demographics to predict who becomes a top-10% inpatient spender over the following two years.
 
 ## Key results
