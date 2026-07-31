@@ -4,6 +4,8 @@
 
 XGBoost + SHAP model that flags Medicare beneficiaries likely to become top-decile inpatient cost claimants, packaged behind a Streamlit front-end for a non-technical business user. Payers need to identify high-cost members *before* the cost is incurred so care-management resources can be targeted proactively — this scores members on prior-year utilization and demographics to predict who becomes a top-10% inpatient spender over the following two years.
 
+**[Try the live app](https://claims-cost-risk-model-shwi3rpiaxdahczsrpkyzx.streamlit.app/)** — enter a member's age, chronic condition count, and prior utilization to get a risk score plus the SHAP drivers behind it.
+
 ## Key results
 
 | # | Step | Key result |
@@ -46,7 +48,7 @@ python pipeline.py          # rebuilds model.pkl, shap_summary.png, scored datas
 streamlit run app.py        # launches the risk tool at localhost:8501
 ```
 
-To deploy: push this repo to GitHub (done), then go to [share.streamlit.io](https://share.streamlit.io) → sign in with GitHub → New app → select this repo → `app.py` as the entry point.
+Deployed on Streamlit Community Cloud, tracking this repo's `master` branch — see the live link above.
 
 ## License
 
